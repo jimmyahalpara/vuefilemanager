@@ -4,10 +4,10 @@
             <MemberAvatar :size="52" :is-border="false" :member="user" />
             <div class="pl-4">
                 <b class="mb-1 block font-bold leading-none">
-                    {{ user.data.relationships.settings.data.attributes.name }}
+                    {{ user?.data?.relationships?.settings?.data?.attributes?.name }}
                 </b>
                 <span class="text-theme text-sm font-semibold leading-none">
-                    {{ user.data.attributes.email }}
+                    {{ user?.data?.attributes?.email }}
                 </span>
             </div>
         </div>
