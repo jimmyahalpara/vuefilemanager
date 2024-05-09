@@ -166,11 +166,9 @@ const mutations = {
         }
     },
     REMOVE_ITEM_FROM_FAVOURITES(state, item) {
-        console.log('state.user.data.relationships.favourites :>> ', state.user.data.relationships.favourites);
         state.user.data.relationships.favourites = state.user.data.relationships.favourites.filter(
             (folder) => folder.data.id !== item.data.id
         )
-        console.log('state.user.data.relationships.favourites :>> ', state.user.data.relationships.favourites);
     },
     UPDATE_NAME_IN_FAVOURITES(state, data) {
         state.user.data.relationships.favourites.find((folder) => {
